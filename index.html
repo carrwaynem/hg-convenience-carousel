@@ -168,6 +168,20 @@
     text-transform:uppercase;
   }
 
+  .company-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0 5cqw;
+    margin-top:4cqw;
+  }
+  .company-grid div{
+    font-size:3.4cqw;
+    font-weight:700;
+    color:#fff;
+    padding:1.7cqw 0;
+    border-bottom:1px solid rgba(255,255,255,0.28);
+  }
+
   .wl-checks{margin-top:3cqw;display:flex;flex-direction:column;gap:1.3cqw;}
   .wl-check-item{font-size:3.2cqw;color:#fff;font-weight:600;}
   .wl-check-item b{color:var(--navy);font-weight:800;margin-right:1.4cqw;}
@@ -229,7 +243,17 @@
       <div class="slide-inner">
         <div class="slide-kicker"><span class="dash"></span>Prepay Apps</div>
         <div class="slide-headline">Why Do Companies Want You To Prepay?</div>
-        <div class="slide-subtext">Starbucks. Dunkin'. Chick-fil-A. Subway. Venmo. Cash App. PayPal. Apple Pay. They all want the same thing: your cash sitting in their system before you spend it.</div>
+        <div class="company-grid">
+          <div>Starbucks</div>
+          <div>Venmo</div>
+          <div>Dunkin'</div>
+          <div>Cash App</div>
+          <div>Chick-fil-A</div>
+          <div>PayPal</div>
+          <div>Subway</div>
+          <div>Apple Pay</div>
+        </div>
+        <div class="slide-subtext">They all want the same thing: your cash sitting in their system before you spend it.</div>
       </div>
     </div>
 
