@@ -128,6 +128,21 @@
   .slide-card.centered .slide-kicker{justify-content:center;}
   .slide-kicker .dash{width:3.4cqw;height:2px;background:currentColor;flex:none;}
 
+  .cascade{display:flex;flex-direction:column;align-items:center;margin-bottom:4cqw;}
+  .cascade-line{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1.8cqw;
+    font-size:3.1cqw;
+    letter-spacing:2px;
+    font-weight:800;
+    text-transform:uppercase;
+    color:var(--navy);
+  }
+  .cascade-line svg{width:4.2cqw;height:4.2cqw;flex:none;stroke:currentColor;}
+  .cascade-arrow{color:rgba(13,17,23,0.55);font-size:2.8cqw;line-height:1;margin:0.8cqw 0;}
+
   .slide-headline{
     font-family:var(--serif);
     font-weight:700;
@@ -197,7 +212,13 @@
       </div>
       <div class="slide-counter">01 / 05</div>
       <div class="slide-inner">
-        <div class="slide-kicker">Convenience &#8594; Costs &#8594; Profits</div>
+        <div class="cascade">
+          <div class="cascade-line"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="7" y1="6" x2="17" y2="6"/><line x1="7" y1="18" x2="17" y2="18"/><circle cx="12" cy="11.5" r="2.2"/></svg>Convenience</div>
+          <div class="cascade-arrow">&#8595;</div>
+          <div class="cascade-line"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="9" y1="12" x2="15" y2="12"/></svg>Increased Costs</div>
+          <div class="cascade-arrow">&#8595;</div>
+          <div class="cascade-line"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>Increased Profits</div>
+        </div>
         <div class="slide-headline">For Them. <span class="hl-accent">Not For You.</span></div>
         <div class="slide-subtext">Convenience isn't free. It fuels someone else's profits. Build a system for yourself.</div>
         <div class="slide-swipe">Swipe &#8594;</div>
