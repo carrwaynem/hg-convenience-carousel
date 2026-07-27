@@ -27,97 +27,16 @@
   }
   .page-head{
     max-width:1200px;
-    margin:0 auto 32px;
+    margin:0 auto 22px;
     padding:0 20px;
     text-align:center;
   }
   .page-head img{height:44px;margin-bottom:14px;}
   .page-head h1{font-size:20px;margin:0 0 6px;font-weight:700;}
   .page-head p{font-size:13px;color:#9aa5b1;margin:0;}
-  .group-label{
-    max-width:1200px;
-    margin:0 auto 14px;
-    padding:0 20px;
-    text-align:center;
-  }
-  .group-label h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--primary);margin:0 0 4px;font-weight:700;}
-  .group-label p{font-size:12px;color:#7d8896;margin:0;}
 
-  /* ===== FEED CARD (4:5) ===== */
-  .feed-wrap{display:flex;justify-content:center;margin-bottom:56px;}
-  .feed-card{
-    container-type: inline-size;
-    width:min(94vw, 460px);
-    aspect-ratio:4/5;
-    background:linear-gradient(180deg,#161b22 0%, #10151c 100%);
-    border:1px solid var(--border);
-    border-radius:14px;
-    overflow:hidden;
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    padding:5cqw 5.5cqw 4cqw;
-  }
-  .stack-head{text-align:center;margin-bottom:1.5cqw;}
-  .stack-line{display:flex;align-items:center;justify-content:center;gap:2cqw;font-weight:700;font-size:5.2cqw;letter-spacing:0.5px;color:#fff;}
-  .stack-arrow{color:var(--primary);font-size:4cqw;line-height:1;margin:0.3cqw 0;}
-  .stack-line.c2{color:var(--primary);}
-  .stack-line.c3{color:var(--accent);}
-  .big-flip{
-    text-align:center;
-    font-weight:800;
-    font-size:9cqw;
-    line-height:1.02;
-    margin:2cqw 0 3cqw;
-    letter-spacing:-0.5px;
-  }
-  .big-flip .not{color:var(--cta);}
-  .visual-row{
-    flex:1;
-    display:grid;
-    grid-template-columns:1fr 8cqw 1fr;
-    gap:0;
-    align-items:start;
-  }
-  .col{display:flex;flex-direction:column;align-items:center;text-align:center;}
-  .col-title{font-size:2.8cqw;letter-spacing:0.5px;text-transform:uppercase;color:#7d8896;font-weight:700;margin-bottom:2cqw;}
-  .icon-row{display:flex;flex-direction:column;gap:1.8cqw;width:100%;margin-bottom:2cqw;}
-  .icon-item{display:flex;align-items:center;gap:2cqw;background:rgba(125,167,194,0.06);border:1px solid var(--border);border-radius:8px;padding:1.8cqw 2cqw;}
-  .icon-item svg{width:6cqw;height:6cqw;flex:none;stroke:var(--primary);}
-  .icon-item span{font-size:2.9cqw;font-weight:600;color:#e6e9ee;text-align:left;}
-  .caption{font-size:2.9cqw;color:#9aa5b1;font-style:italic;margin-bottom:1.2cqw;}
-  .down-mini{color:var(--primary);font-size:3.5cqw;margin:0.5cqw 0;}
-  .result-line{font-size:2.9cqw;font-weight:700;color:#fff;line-height:1.25;}
-  .mid-col{display:flex;align-items:center;justify-content:center;padding-top:14cqw;}
-  .mid-col .arrow-h{color:var(--primary);font-size:5cqw;}
-  .vault-icon{width:11cqw;height:11cqw;stroke:var(--accent);margin-bottom:2cqw;}
-  .right-title{font-size:3.4cqw;font-weight:700;color:#fff;line-height:1.2;margin-bottom:2.4cqw;min-height:9cqw;display:flex;align-items:center;}
-  .check-list{display:flex;flex-direction:column;gap:1.4cqw;width:100%;text-align:left;}
-  .check-item{display:flex;align-items:center;gap:1.6cqw;font-size:2.7cqw;font-weight:600;color:#e6e9ee;}
-  .check-item svg{width:3.6cqw;height:3.6cqw;flex:none;stroke:var(--accent);}
-  .bottom-bar{
-    margin-top:3.5cqw;
-    background:var(--cta);
-    border-radius:8px;
-    padding:3cqw 3.5cqw;
-    text-align:center;
-    font-weight:800;
-    font-size:3.4cqw;
-    line-height:1.3;
-    color:#fff;
-  }
-  .watermark{
-    position:absolute;
-    right:4cqw;
-    bottom:4cqw;
-    width:8cqw;
-    height:8cqw;
-    opacity:0.5;
-    color:var(--primary);
-  }
-
-  /* ===== STORY SEQUENCE (9:16) ===== */
-  .story-wrap{
+  /* ===== CAROUSEL SLIDES (4:5) ===== */
+  .slide-wrap{
     display:flex;
     gap:16px;
     overflow-x:auto;
@@ -126,48 +45,105 @@
     max-width:1200px;
     margin:0 auto;
   }
-  .story-wrap::-webkit-scrollbar{height:6px;}
-  .story-wrap::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px;}
-  .story-card{
+  .slide-wrap::-webkit-scrollbar{height:6px;}
+  .slide-wrap::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px;}
+  .slide-card{
     container-type: inline-size;
     flex:none;
     scroll-snap-align:center;
-    width:min(84vw, 320px);
-    aspect-ratio:9/16;
+    width:min(88vw, 380px);
+    aspect-ratio:4/5;
     background:linear-gradient(180deg,#161b22 0%, #10151c 100%);
     border:1px solid var(--border);
     border-radius:16px;
+    overflow:hidden;
     position:relative;
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:10cqw 7cqw;
+    padding:6cqw 6.5cqw 7cqw;
   }
-  .story-tag{
-    position:absolute;
-    top:5cqw;
-    left:5cqw;
-    font-size:3.2cqw;
+  .slide-tag{
+    font-size:2.8cqw;
     letter-spacing:1px;
     text-transform:uppercase;
     color:var(--primary);
     font-weight:700;
   }
-  .story-text{
-    font-size:8.5cqw;
+  .slide-body{margin:auto 0;width:100%;}
+
+  .stack-head{text-align:center;margin-bottom:3cqw;}
+  .stack-line{display:flex;align-items:center;justify-content:center;gap:2cqw;font-weight:700;font-size:6.2cqw;letter-spacing:0.3px;color:#fff;}
+  .stack-arrow{color:var(--primary);font-size:4.6cqw;line-height:1;margin:0.6cqw 0;}
+  .stack-line.c2{color:var(--primary);}
+  .stack-line.c3{color:var(--accent);}
+  .big-flip{
+    text-align:center;
     font-weight:800;
-    line-height:1.28;
+    font-size:9.6cqw;
+    line-height:1.05;
+    letter-spacing:-0.5px;
+  }
+  .big-flip .not{color:var(--cta);}
+  .bottom-bar{
+    margin-top:5cqw;
+    background:var(--cta);
+    border-radius:8px;
+    padding:3.4cqw 3.8cqw;
+    text-align:center;
+    font-weight:800;
+    font-size:3.7cqw;
+    line-height:1.32;
     color:#fff;
   }
-  .story-card.final .story-text{color:var(--cta);}
-  .story-sub{
-    margin-top:5cqw;
-    font-size:3.6cqw;
+
+  .slide-headline{
+    text-align:center;
+    font-weight:800;
+    font-size:7.4cqw;
+    line-height:1.25;
+    color:#fff;
+  }
+  .slide-card.final .slide-headline{color:var(--cta);}
+  .slide-sub{
+    text-align:center;
+    font-size:3.3cqw;
     color:#9aa5b1;
     font-weight:600;
+    margin-top:3cqw;
   }
+
+  .company-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2.4cqw;
+    margin-top:5cqw;
+  }
+  .company-pill{
+    background:rgba(125,167,194,0.07);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:3cqw 2cqw;
+    text-align:center;
+    font-size:3.3cqw;
+    font-weight:700;
+    color:#e6e9ee;
+  }
+
+  .bars-icon{display:block;margin:5cqw auto 0;width:20cqw;height:14cqw;stroke:var(--accent);}
+
+  .wl-label{
+    text-align:center;
+    font-size:4cqw;
+    font-weight:700;
+    color:var(--accent);
+    letter-spacing:0.3px;
+    margin-top:5cqw;
+    margin-bottom:4cqw;
+  }
+  .wl-checks{display:flex;flex-direction:column;gap:2.2cqw;}
+  .wl-check-item{display:flex;align-items:center;gap:2.4cqw;font-size:3.6cqw;font-weight:600;color:#e6e9ee;}
+  .wl-check-item svg{width:4.6cqw;height:4.6cqw;flex:none;stroke:var(--accent);}
+
   .cta-block{
     margin-top:6cqw;
     display:flex;
@@ -190,15 +166,17 @@
     color:#7d8896;
     font-weight:600;
   }
-  .story-watermark{
+
+  .watermark{
     position:absolute;
     bottom:5cqw;
     right:5cqw;
-    width:9cqw;
-    height:9cqw;
+    width:8cqw;
+    height:8cqw;
     opacity:0.5;
     color:var(--primary);
   }
+
   .dots{display:flex;justify-content:center;gap:8px;margin-top:4px;}
   .dots span{width:6px;height:6px;border-radius:50%;background:var(--border);}
 
@@ -212,107 +190,91 @@
   <div class="page-head">
     <img src="https://assets.cdn.filesafe.space/VAzLM9UQAimhEsqIbaoE/media/64d12ed29b131f4bfb22d4f1.png" alt="Hidden Gems">
     <h1>Convenience Isn't Free</h1>
-    <p>Screenshot each card below to post. Feed carousel graphic, then the story sequence option.</p>
+    <p>5-slide Instagram carousel. Swipe to preview, screenshot each slide to post.</p>
   </div>
 
-  <!-- ================= FEED CAROUSEL GRAPHIC ================= -->
-  <div class="group-label">
-    <h2>Feed Post / Carousel Graphic</h2>
-    <p>4:5 — screenshot just this card</p>
-  </div>
-  <div class="feed-wrap">
-    <div class="feed-card">
+  <div class="slide-wrap">
 
-      <div class="stack-head">
-        <div class="stack-line c1">Convenience</div>
-        <div class="stack-arrow">&#8595;</div>
-        <div class="stack-line c2">Increased Costs</div>
-        <div class="stack-arrow">&#8595;</div>
-        <div class="stack-line c3">Increased Profits</div>
+    <!-- SLIDE 1: Hook -->
+    <div class="slide-card">
+      <div class="slide-tag">Slide 1</div>
+      <div class="slide-body">
+        <div class="stack-head">
+          <div class="stack-line c1">Convenience</div>
+          <div class="stack-arrow">&#8595;</div>
+          <div class="stack-line c2">Increased Costs</div>
+          <div class="stack-arrow">&#8595;</div>
+          <div class="stack-line c3">Increased Profits</div>
+        </div>
+        <div class="big-flip">For Them. <span class="not">Not For You.</span></div>
+        <div class="bottom-bar">Convenience isn't free. It fuels someone else's profits. Build a system for yourself.</div>
       </div>
-
-      <div class="big-flip">For Them. <span class="not">Not For You.</span></div>
-
-      <div class="visual-row">
-        <div class="col">
-          <div class="col-title">You Use</div>
-          <div class="icon-row">
-            <div class="icon-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13a2 2 0 0 1 2 2c0 2.5-1.8 4-4 4H8c-2.7 0-4-1.5-4-4V8Z"/><path d="M17 10h1.5a2 2 0 0 1 0 4H17"/><path d="M6 3.5c0 1-1 1-1 2s1 1 1 2"/><path d="M10 3.5c0 1-1 1-1 2s1 1 1 2"/><path d="M3 18h14"/></svg>
-              <span>Coffee App</span>
-            </div>
-            <div class="icon-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16l-1.5 9a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 10Z"/><path d="M6 10a6 6 0 0 1 12 0"/><path d="M2 10h20"/></svg>
-              <span>Fast Food App</span>
-            </div>
-            <div class="icon-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><circle cx="16.5" cy="14.5" r="1.2" fill="#7DA7C2" stroke="none"/></svg>
-              <span>Digital Wallet</span>
-            </div>
-          </div>
-          <div class="caption">You preload cash.</div>
-          <div class="down-mini">&#8595;</div>
-          <div class="result-line">They gain liquidity and grow.</div>
-        </div>
-
-        <div class="mid-col">
-          <div class="arrow-h">&#8594;</div>
-        </div>
-
-        <div class="col">
-          <svg class="vault-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 5 12 1.5 21.5 5"/><rect x="3.3" y="6.3" width="17.4" height="1.6" rx="0.3"/><line x1="4.5" y1="9.4" x2="4.5" y2="17.6"/><line x1="8" y1="9.4" x2="8" y2="17.6"/><line x1="11.3" y1="9.4" x2="11.3" y2="17.6"/><line x1="14.7" y1="9.4" x2="14.7" y2="17.6"/><line x1="18" y1="9.4" x2="18" y2="17.6"/><rect x="3.3" y="18.4" width="17.4" height="1.6" rx="0.3"/><line x1="2" y1="21.5" x2="22" y2="21.5"/></svg>
-          <div class="right-title">Properly Structured Participating Whole Life</div>
-          <div class="check-list">
-            <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Liquidity</div>
-            <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Control</div>
-            <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Tax Advantages</div>
-            <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Growth</div>
-            <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Family Protection</div>
-            <div class="check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Capital When Opportunity Appears</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bottom-bar">Convenience isn't free. It fuels someone else's profits. Build a system for yourself.</div>
-
       <svg class="watermark" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M58 6 8 50l44 40 42-64"/></svg>
     </div>
-  </div>
 
-  <!-- ================= STORY SEQUENCE OPTION ================= -->
-  <div class="group-label">
-    <h2>Story Sequence Option</h2>
-    <p>9:16 — swipe to preview, screenshot each card</p>
-  </div>
-  <div class="story-wrap">
-
-    <div class="story-card">
-      <div class="story-tag">Slide 1</div>
-      <div class="story-text">Why do companies want you to prepay?</div>
-    </div>
-
-    <div class="story-card">
-      <div class="story-tag">Slide 2</div>
-      <div class="story-text">Because convenience creates their liquidity and profits.</div>
-    </div>
-
-    <div class="story-card">
-      <div class="story-tag">Slide 3</div>
-      <div class="story-text">What if your money worked that hard for you?</div>
-    </div>
-
-    <div class="story-card final">
-      <div class="story-tag">Slide 4</div>
-      <div class="story-text">Stop funding their system. Start building your own.</div>
-      <div class="cta-block">
-        <div class="cta-pill">Comment "BANK"</div>
-        <div class="cta-alt">or find the link in bio</div>
+    <!-- SLIDE 2: Why prepay + company list -->
+    <div class="slide-card">
+      <div class="slide-tag">Slide 2</div>
+      <div class="slide-body">
+        <div class="slide-headline">Why do companies want you to prepay?</div>
+        <div class="slide-sub">You already trust them with your cash.</div>
+        <div class="company-grid">
+          <div class="company-pill">Starbucks</div>
+          <div class="company-pill">Dunkin'</div>
+          <div class="company-pill">Chick-fil-A</div>
+          <div class="company-pill">Subway</div>
+          <div class="company-pill">Venmo</div>
+          <div class="company-pill">Cash App</div>
+          <div class="company-pill">PayPal</div>
+          <div class="company-pill">Apple Pay</div>
+        </div>
       </div>
-      <svg class="story-watermark" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M58 6 8 50l44 40 42-64"/></svg>
+      <svg class="watermark" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M58 6 8 50l44 40 42-64"/></svg>
+    </div>
+
+    <!-- SLIDE 3: The answer, standalone -->
+    <div class="slide-card">
+      <div class="slide-tag">Slide 3</div>
+      <div class="slide-body">
+        <div class="slide-headline">Because it creates their liquidity and drives their profits.</div>
+        <svg class="bars-icon" viewBox="0 0 60 40" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="34" x2="8" y2="24"/><line x1="26" y1="34" x2="26" y2="14"/><line x1="44" y1="34" x2="44" y2="6"/></svg>
+      </div>
+      <svg class="watermark" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M58 6 8 50l44 40 42-64"/></svg>
+    </div>
+
+    <!-- SLIDE 4: The pivot + solution + checklist -->
+    <div class="slide-card">
+      <div class="slide-tag">Slide 4</div>
+      <div class="slide-body">
+        <div class="slide-headline">What if your money worked that hard for you?</div>
+        <div class="wl-label">Properly Structured Participating Whole Life</div>
+        <div class="wl-checks">
+          <div class="wl-check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Liquidity</div>
+          <div class="wl-check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Control</div>
+          <div class="wl-check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Tax Advantages</div>
+          <div class="wl-check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Growth</div>
+          <div class="wl-check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Family Protection</div>
+          <div class="wl-check-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>Capital When Opportunity Appears</div>
+        </div>
+      </div>
+      <svg class="watermark" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M58 6 8 50l44 40 42-64"/></svg>
+    </div>
+
+    <!-- SLIDE 5: CTA -->
+    <div class="slide-card final">
+      <div class="slide-tag">Slide 5</div>
+      <div class="slide-body">
+        <div class="slide-headline">Stop funding their system. Start building your own.</div>
+        <div class="cta-block">
+          <div class="cta-pill">Comment "BANK"</div>
+          <div class="cta-alt">or find the link in bio</div>
+        </div>
+      </div>
+      <svg class="watermark" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M58 6 8 50l44 40 42-64"/></svg>
     </div>
 
   </div>
-  <div class="dots"><span></span><span></span><span></span><span></span></div>
+  <div class="dots"><span></span><span></span><span></span><span></span><span></span></div>
 
 </body>
 </html>
