@@ -73,6 +73,8 @@
     font-weight:700;
   }
   .slide-body{margin:auto 0;width:100%;}
+  .slide-body--split{margin:0;width:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-start;}
+  .slide-body--split .bottom-bar{margin-top:auto;margin-bottom:7cqw;}
 
   .stack-head{margin-bottom:3cqw;}
   .stack-line{display:flex;align-items:center;gap:3cqw;font-weight:700;font-size:6.2cqw;letter-spacing:0.3px;color:#fff;}
@@ -206,7 +208,7 @@
     <!-- SLIDE 1: Hook -->
     <div class="slide-card">
       <div class="slide-tag">Slide 1</div>
-      <div class="slide-body">
+      <div class="slide-body slide-body--split">
         <div class="stack-head">
           <div class="stack-line c1"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="7" y1="6" x2="17" y2="6"/><line x1="7" y1="18" x2="17" y2="18"/><circle cx="12" cy="11.5" r="2.2"/></svg>Convenience</div>
           <div class="stack-arrow">&#8595;</div>
